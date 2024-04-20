@@ -16,7 +16,19 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 :root {
-  --font-family: "Roboto", sans-serif;
+  --font-title: "Oswald", sans-serif;
+  --font-family: "Epilogue", sans-serif;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
 }
 .header {
   background-color: #222224;
@@ -46,14 +58,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
   line-height: 125%;
   color: #a6a8ad;
 }
-.container {
-  margin: 0 auto;
-  width: 1200px;
-  padding: 0 20px;
-}
+
 /* section main */
 .main {
-  
+  background-color: #121214;
 }
 .service {
   background-image: url(./src/pc-background.jpg);
@@ -63,16 +71,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .main_title {
   width: 632px;
   height: 216px;
-  padding-top: 186px;
+  padding-top: 210px;
 }
 .main_title-h1 {
-  font-family: var(--font-family);
-  font-weight: 600;
+  font-family: var(--font-title);
+  font-weight: 1000;
   font-size: 68px;
   line-height: 100%;
   letter-spacing: 0.02em;
   color: rgb(35 35 35);
-  opacity: 0.9;
+  opacity: 1;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 50px;
@@ -85,13 +93,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
   padding: 70px 0 70px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .services__item {
   width: 210px;
 }
 .services__h3 {
   font-family: var(--font-family);
-  font-weight: 400;
+  font-weight: 600;
   font-size: 28px;
   line-height: 100%;
   color: #fff;
@@ -115,7 +124,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 .problems__h2 {
   font-family: var(--font-family);
-  font-weight: 400;
+  font-weight: 600;
   font-size: 28px;
   line-height: 140%;
   color: #fff;
@@ -138,7 +147,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 }
 .problems__ul li {
-	list-style-image: url(/src/cross.svg);
+	list-style-image: url(src/cross.svg);
 padding-left: 20px;
 }
 .problems__img img {
@@ -157,9 +166,9 @@ box-shadow: 0 0 10px #444;
 
 }
 .about__h4 {
-  text-align: center;
+  text-align: right;
   font-family: var(--font-family);
-  font-weight: 400;
+  font-weight: 600;
   font-size: 28px;
   line-height: 140%;
   color: #fff;
@@ -172,6 +181,10 @@ box-shadow: 0 0 10px #444;
   line-height: 150%;
   color: #fff;
   width: 500px;
+  border-top: #fff solid;
+  border-bottom: #fff solid;
+  padding: 10px 0;
+  text-align: right;
 }
 .about__ul li {
   padding-bottom: 30px;
@@ -182,4 +195,92 @@ box-shadow: 0 0 10px #444;
   height: 100%;
   border-radius: 10px;
 box-shadow: 0 0 10px #444;
+}
+
+.footer {
+  background-color: #222224;
+}
+.footer_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+  text-align: center;
+}
+.footer__text p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #a6a8ad;
+}
+
+/* adaptive */
+@media (max-width: 1024px) {
+  
+}
+
+@media (max-width: 768px) {
+
+}
+@media (max-width: 420px) {
+  .menu {
+    display: none;
+  }
+  .main_title {
+    display: flex;
+    width: 100px;
+    padding-top: 245px;
+  }
+  .main_title-h1 {
+    font-size: 51px;
+    text-align: center;
+    color: #fff;
+    opacity: 1;
+    padding-left: 24%;
+  }
+  .service {
+    background-size: cover;
+    background-position: right;
+  }
+  
+  .services__block {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .services__item {
+    padding-bottom: 20px;
+    width:auto;
+  }
+
+  .problems__block {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .about__h4 {
+    font-size: 23px;
+    padding-bottom: 30px;
+  }
+  .about__img {
+    padding-bottom: 30px;
+  }
+  .about__img img {
+    width: 100%;
+  }
+  .about__block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about {
+    padding: 70px 0;
+  }
+  .about__ul {
+    text-align: left;
+  }
+  .about__ul li:last-child {
+    padding-bottom: 0px;
+}
 }
