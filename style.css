@@ -284,3 +284,34 @@ box-shadow: 0 0 10px #444;
     padding-bottom: 0px;
 }
 }
+
+@media (max-width: 360px) {
+  .service {
+    height: 71vh;
+  }
+  .main_title {
+    display: flex;
+    width: 100px;
+    padding-top: 135px;
+  }
+  .main_title-h1 {
+    font-size: 48px;
+    text-align: center;
+    color: #fff;
+    opacity: 1;
+    padding-left: 6%;
+  }
+  .problems__h2 {
+    font-size: 22px;
+    width: 100%;
+  }
+  .problems__ul {
+    width: 100%;
+    font-size: 12px;
+  }
+  .about__h4 {
+    width: 100%;
+    font-size: 19px;
+    text-align: left;
+  }
+}
