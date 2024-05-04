@@ -7,11 +7,11 @@
   <title>Обслуживание ПК в Рогачеве</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="normalize.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
-  rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -39,23 +39,23 @@
             <h1 class="main_title-h1">Обслуживание компьютеров и ноутбуков в Рогачеве</h1>
             <!-- <button class="header__btn">Оставить заявку</button> -->
 
-            
-            <form method="POST" action="https://docs.google.com/forms/d/1E0wgIyL8xTsOTUwnAFf2L7paN0fEXdZVsnYJF2sV0Ew"
-              onsubmit="return window.submitGoogleForm(this);">
-            
-              <label>name</label>
-              <!-- view the form and inspect inputs to get the generated names. -->
-              <input name="entry.2345234">
-            
-              <button type=submit>Submit</button>
-            </form>
 
+            <!-- <form action="#" class="login-form" name="submit-to-google-sheet">
             
-
-            <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSdQLBdipMqPR0Ayf3Iayn3xr7r1G3dImbXkQ3igDV9H_k_Eyg/viewform?embedded=true"
-              width="640" height="541" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
-
+              <h2>Login Form</h2>
+            
+              <input type="text" name="Name" id="Name" autocomplete="off" placeholder="Enter your name">
+            
+              <input type="email" name="email" id="email" autocomplete="off" placeholder="Enter your email" required>
+            
+              <input type="password" name="password" id="password" autocomplete="off" placeholder="Enter your password" required>
+            
+              <button type="submit">Отправить</button>
+            
+              <span id="sendText"></span>
+            
+            </form> -->
+            
           </div>
         </div>
       </section>
@@ -135,7 +135,17 @@
   </div>
   </footer>
   </div>
-  <script src="google-form.js"></script>
+  <!-- <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxVn6axzs9xNX6Idhmjrc3s6SVaRoFXaerQ_wuYGeauRxS28BUmNQYlgc5jPYpfdGe2aw/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script> -->
 </body>
 
 </html>
